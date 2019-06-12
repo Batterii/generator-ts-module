@@ -8,13 +8,12 @@ Batterii TypeScript projects.
 
 Options:
   -h,   --help           # Print the generator's options and usage
-        --skip-cache     # Do not remember prompt answers                                                                                 Default: false
-        --skip-install   # Do not automatically install dependencies                                                                      Default: false
-        --force-install  # Fail on install dependencies error                                                                             Default: false
+        --skip-cache     # Do not remember prompt answers                   Default: false
+        --skip-install   # Do not automatically install dependencies        Default: false
+        --force-install  # Fail on install dependencies error               Default: false
   -f,   --function       # Name of the first module function
   -m,   --module         # Name of the module, without the extension
   -s,   --stand-alone    # Set if the module will export only one function
-
 ```
 
 ## Function and Module Names
