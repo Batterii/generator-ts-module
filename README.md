@@ -1,4 +1,4 @@
-# @batterii-generator-ts-module
+# @batterii/generator-ts-module
 A [yeoman](https://yeoman.io/) generator for creating static function modules in
 Batterii TypeScript projects.
 
