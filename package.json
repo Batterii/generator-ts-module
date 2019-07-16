@@ -6,7 +6,7 @@
 		"yeoman-generator"
 	],
 	"author": "Batterii, LLC",
-	"license": "UNLICENSED",
+	"license": "MIT",
 	"repository": "github:Batterii/generator-ts-module",
 	"files": [
 		"generators"
