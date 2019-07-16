@@ -1,6 +1,6 @@
 {
 	"name": "@batterii/generator-ts-module",
-	"version": "0.0.3",
+	"version": "0.1.0",
 	"description": "Static function module generator for Batterii TypeScript projects",
 	"keywords": [
 		"yeoman-generator"
