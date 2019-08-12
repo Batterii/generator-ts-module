@@ -1,9 +1,9 @@
-import * as sinon from 'sinon';
 import {
 	<%= functionName %>,
 	// Import additional module functions here.
 } from '../../lib/<%= moduleName %>';
 import { expect } from 'chai';
+import sinon from 'sinon';
 
 describe('<%= moduleName %>', function() {
 	describe('<%= functionName %>', function() {

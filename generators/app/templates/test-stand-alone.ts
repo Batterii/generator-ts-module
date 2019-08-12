@@ -1,7 +1,10 @@
-import * as sinon from 'sinon';
-<%for (const { name, path } of imports) { _%>
+<%for (const { name, path, isDefault } of imports) { _%>
+<%_    if (isDefault) { _%>
+import <%= name %> from '<%= path %>';
+<%    } else { _%>
 import { <%= name %> } from '<%= path %>';
-<%_ } _%>
+<%    } _%>
+<%_}_%>
 
 describe('<%= functionName %>', function() {
 	// Write unit tests for the '<%= functionName %>' function here.
