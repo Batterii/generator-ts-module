@@ -17,10 +17,11 @@ Options:
 ```
 
 ## Function and Module Names
-This generator will create a new `.ts` file in the `lib` directory with
+This generator will create a new `.ts` file in the `src/lib` directory with
 `--module` as its name, which exports a function with `--function` as its name.
-It also will create associated unit test file in the `test/unit` directory. If
-either of these options is omitted, the generator will prompt the user for them.
+It also will create associated unit test file in the same directory with a
+`.spec.ts` extension. If either of these options is omitted, the generator will
+prompt the user for them.
 
 The function name must be a valid TypeScript identifier in lower camel case,
 while the module name must be dash-separated lower case. The prompt for the

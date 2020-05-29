@@ -50,19 +50,19 @@ class ModuleGenerator extends Generator {
 			'stand-alone': standAlone,
 		} = this.options;
 
-		// Create the new module file in the lib directory.
+		// Create the new module file in the src/lib directory.
 		this.copyTemplate(
 			'module.ts',
-			`lib/${moduleName}.ts`,
+			`src/lib/${moduleName}.ts`,
 			{ functionName, moduleName, standAlone },
 		);
 
-		// Get the path for the new test file in the unit test directory.
-		const testPath = `test/unit/${moduleName}.ts`;
+		// Get the path for the new spec file in the src/lib directory.
+		const specPath = `src/lib/${moduleName}.spec.ts`;
 
 		if (standAlone) {
-			// Create the stand-alone test file with properly sorted imports.
-			this.copyTemplate('test-stand-alone.ts', testPath, {
+			// Create the stand-alone spec file with properly sorted imports.
+			this.copyTemplate('spec-stand-alone.ts', specPath, {
 				functionName,
 				imports: orderBy([
 					{ name: 'expect', path: 'chai' },
@@ -71,8 +71,8 @@ class ModuleGenerator extends Generator {
 				], 'name'),
 			});
 		} else {
-			// Create a test file for a multi-function module.
-			this.copyTemplate('test-module.ts', testPath, {
+			// Create a spec file for a multi-function module.
+			this.copyTemplate('spec-module.ts', specPath, {
 				functionName,
 				moduleName,
 			});
