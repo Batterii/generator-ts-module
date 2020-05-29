@@ -67,7 +67,7 @@ class ModuleGenerator extends Generator {
 				imports: orderBy([
 					{ name: 'expect', path: 'chai' },
 					{ name: 'sinon', path: 'sinon', isDefault: true },
-					{ name: functionName, path: `../../lib/${moduleName}` },
+					{ name: functionName, path: `./${moduleName}` },
 				], 'name'),
 			});
 		} else {

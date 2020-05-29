@@ -1,7 +1,7 @@
 import {
 	<%= functionName %>,
 	// Import additional module functions here.
-} from '../../lib/<%= moduleName %>';
+} from './<%= moduleName %>';
 import { expect } from 'chai';
 import sinon from 'sinon';
 
