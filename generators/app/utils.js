@@ -1,4 +1,4 @@
-const decamelize = require('decamelize');
+const decamelize = require("decamelize");
 
 // Regex patterns for validation.
 const namePattern = /^[a-z][A-Za-z0-9]*$/;
@@ -12,7 +12,7 @@ const modulePattern = /^[a-z0-9-]+$/;
  */
 exports.validateFunction = function(name) {
 	return namePattern.test(name) ||
-		'Function name must be a valid identifier in lower camel case';
+		"Function name must be a valid identifier in lower camel case";
 };
 
 /**
@@ -23,7 +23,7 @@ exports.validateFunction = function(name) {
  */
 exports.validateModule = function(name) {
 	return modulePattern.test(name) ||
-		'Module name must be dash-separated lower case';
+		"Module name must be dash-separated lower case";
 };
 
 /**
@@ -32,7 +32,7 @@ exports.validateModule = function(name) {
  * @returns {string} - The decamlized function name.
  */
 exports.getDefaultModule = function(options) {
-	return decamelize(options.function, '-');
+	return decamelize(options.function, "-");
 };
 
 /**
