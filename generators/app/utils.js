@@ -32,7 +32,7 @@ exports.validateModule = function(name) {
  * @returns {string} - The decamlized function name.
  */
 exports.getDefaultModule = function(options) {
-	return decamelize(options.function, "-");
+	return decamelize(options.function, {separator: "-"});
 };
 
 /**
